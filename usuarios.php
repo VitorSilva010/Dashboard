@@ -43,7 +43,7 @@
                     <td>maria.oliveira@example.com</td>
                     <td>Usuário</td>
                     <td>Ativo</td>
-                    <td>
+                    <td><span class="badge ativo">Ativo</span>
                         <button class="btn btn-sm btn-primary">Editar</button>
                         <button class="btn btn-sm btn-danger">Excluir</button>
                     </td>
