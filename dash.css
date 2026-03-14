@@ -38,3 +38,95 @@ tbody tr:hover {
   cursor: pointer;
   font-size: 16p
 }
+/* Formatação do formulário */
+.card-form {
+  background: white;
+  max-width: 700px;           /* Evita que o form fique muito largo em telas grandes */
+  margin: 20px auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.form-header {
+  margin-bottom: 25px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;     /* Label em cima, input embaixo */
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;                  /* Espaço entre os campos lado a lado */
+}
+
+.flex-1 {
+  flex: 1;                    /* Divide o espaço igualmente entre os dois campos */
+}
+
+label {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 14px;
+}
+
+input,
+select {
+  color: #2c3e50;
+  font-size: 16px;
+  border: 1px solid #cbd5e0;
+  padding: 10px 12px;
+  border-radius: 6px;
+  transition: all 0.3s;
+}
+
+input:focus,
+select:focus {
+  border-color: #3182ce;      /* Azul mais agradável no focus */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(49, 130, 206, 0.2);
+}
+
+.btn-save {
+  background-color: #2f855a;  /* Verde um pouco mais escuro e elegante */
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.btn-save:hover {
+  background-color: #276749;
+}
+
+.btn-cancel {
+  background-color: transparent;
+  color: #4a5568;
+  border: 1px solid #cbd5e0;
+  padding: 12px 25px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.btn-cancel:hover {
+  background-color: #edf2f7;
+  border-color: #a0aec0;
+}
+
+/* Opcional: estilizar o link de cancelar como botão */
+.form-actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 30px;
+}
